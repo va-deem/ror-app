@@ -6,6 +6,7 @@ ruby '2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 
+gem "bcrypt", "~> 3.1"
 gem "bootstrap-sass", "~> 3.4"
 
 # Use Puma as the app server
