@@ -69,12 +69,14 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: host }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      port: 587,
-      address: 'smtp.gmail.com',
+      tls: true,
+      address: "smtp.yandex.ru",
+      port: 465,
+      domain: "yandex.ru",
+      authentication: "plain",
+      enable_starttls_auto: true,
       user_name: ENV['SMTP_USER_NAME'],
       password: ENV['SMTP_PASSWORD'],
-      authentication: :plain,
-      enable_starttls_auto: true
   }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
