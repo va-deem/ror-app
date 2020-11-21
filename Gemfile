@@ -15,6 +15,7 @@ gem "dotenv-rails", "~> 2.7"
 gem "active_storage_validations", "~> 0.9.0"
 gem "image_processing", "~> 1.12"
 gem "mini_magick", "~> 4.11"
+gem "aws-sdk-s3", require: false
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
