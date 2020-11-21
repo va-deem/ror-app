@@ -15,7 +15,6 @@ gem "dotenv-rails", "~> 2.7"
 gem "active_storage_validations", "~> 0.9.0"
 gem "image_processing", "~> 1.12"
 gem "mini_magick", "~> 4.11"
-gem "aws-sdk-s3", require: false
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
@@ -72,6 +71,7 @@ end
 
 group :production do
   gem "pg", "~> 1.2"
+  gem "aws-sdk-s3", "~> 1.85", require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
