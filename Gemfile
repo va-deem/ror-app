@@ -12,6 +12,9 @@ gem "faker", "~> 2.14"
 gem "will_paginate", "~> 3.3"
 gem "bootstrap-will_paginate", "~> 1.0"
 gem "dotenv-rails", "~> 2.7"
+gem "active_storage_validations", "~> 0.9.0"
+gem "image_processing", "~> 1.12"
+gem "mini_magick", "~> 4.11"
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
